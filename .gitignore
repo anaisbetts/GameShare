@@ -1,0 +1,11 @@
+log/*.log
+tmp/*
+.DS_Store
+.DS_Store
+db/test.sqlite3
+db/development.sqlite3
+/log/*.pid
+/coverage/*
+public/system/*
+config/database.yml
+*.swp
