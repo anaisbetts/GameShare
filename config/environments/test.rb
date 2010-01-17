@@ -34,3 +34,6 @@ config.gem 'shoulda', :lib => 'shoulda'
 config.gem 'cucumber'
 config.gem 'metric_fu', :lib => 'metric_fu', :source => 'http://gems.github.com'
 config.gem 'webrat', :lib => 'webrat'
+
+HOST = "localhost"
+DO_NOT_REPLY = "donotreply@example.com"

@@ -1,8 +1,11 @@
 class GroupsController < ApplicationController
+  before_filter :authenticate
+
   # GET /groups
   # GET /groups.xml
   def index
     @groups = Group.all
+    @this_user = current_user
 
     respond_to do |format|
       format.html # index.html.erb

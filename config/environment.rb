@@ -19,6 +19,8 @@ Rails::Initializer.run do |config|
   config.gem 'paperclip', :lib => 'paperclip'
   config.gem 'will_paginate', :lib => 'will_paginate'
   config.gem 'RedCloth', :lib => 'redcloth', :version => '~> 4.2.2'
+  config.gem "clearance", :lib => 'clearance', :source=> 'http://gemcutter.org'
+
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
