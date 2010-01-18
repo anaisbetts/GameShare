@@ -1,18 +1,17 @@
 %h1
   Editing group
 - form_for(@group) do |f|
-= f.error_messages
-%p
-  = f.label :name
-  %br
-  = f.text_field :name
-%p
-  = f.label :created_by_id
-  %br
-  = f.text_field :created_by_id
-%p
-  = f.submit 'Update'
-- end
+  = f.error_messages
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :created_by_id
+    %br
+    = f.text_field :created_by_id
+  %p
+    = f.submit 'Update'
 = link_to 'Show', @group
 |
 = link_to 'Back', groups_path

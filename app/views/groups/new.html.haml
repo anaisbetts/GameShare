@@ -1,16 +1,15 @@
 %h1
   New group
 - form_for(@group) do |f|
-= f.error_messages
-%p
-  = f.label :name
-  %br
-  = f.text_field :name
-%p
-  = f.label :created_by_id
-  %br
-  = f.text_field :created_by_id
-%p
-  = f.submit 'Create'
-- end
+  = f.error_messages
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :created_by_id
+    %br
+    = f.text_field :created_by_id
+  %p
+    = f.submit 'Create'
 = link_to 'Back', groups_path
