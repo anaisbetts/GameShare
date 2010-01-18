@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(:version => 20100117211108) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
-    t.integer  "created_by_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

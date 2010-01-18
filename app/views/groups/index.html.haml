@@ -1,0 +1,24 @@
+%h1
+  Listing groups for
+  = @this_user.email
+%table
+  %tr
+    %th
+      Name
+    %th
+      Created by
+  - @groups.each do |group|
+  %tr
+    %td
+      = h group.name
+    %td
+      = h group.created_by_id
+    %td
+      = link_to 'Show', group
+    %td
+      = link_to 'Edit', edit_group_path(group)
+    %td
+      = link_to 'Destroy', group, :confirm => 'Are you sure?', :method => :delete
+  - end
+%br
+= link_to 'New group', new_group_path
