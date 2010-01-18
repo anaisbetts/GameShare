@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20100117211108) do
     t.datetime "updated_at"
   end
 
-  create_table "gamertag_cache", :force => true do |t|
+  create_table "gamertags", :force => true do |t|
     t.integer  "user_id"
     t.string   "gamertag_yaml"
     t.datetime "created_at"

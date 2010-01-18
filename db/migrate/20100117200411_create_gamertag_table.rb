@@ -1,6 +1,6 @@
-class CreateGamertagCacheTable < ActiveRecord::Migration
+class CreateGamertagTable < ActiveRecord::Migration
   def self.up
-    create_table :gamertag_cache do |t|
+    create_table :gamertags do |t|
       t.integer :user_id
       t.string :gamertag_yaml
       t.timestamps
@@ -8,6 +8,6 @@ class CreateGamertagCacheTable < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :gamertag_cache
+    drop_table :gamertags
   end
 end
