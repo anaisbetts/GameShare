@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100117211108) do
+ActiveRecord::Schema.define(:version => 20100118054006) do
 
   create_table "acls", :force => true do |t|
     t.integer  "user_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20100117211108) do
     t.string   "gamertag_yaml"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   create_table "games", :force => true do |t|
@@ -59,7 +60,6 @@ ActiveRecord::Schema.define(:version => 20100117211108) do
     t.boolean  "email_confirmed",                   :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "gamertag"
     t.string   "name"
   end
 
