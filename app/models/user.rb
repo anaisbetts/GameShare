@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   include Clearance::User
+
   has_many :groups, :through => :acls
   has_many :games
   has_one :gamertag
@@ -22,7 +23,7 @@ class User < ActiveRecord::Base
   end
 
   def set_gamertag
-    new_tag = Gamertag.find_by_name(gamertag_name) 
+    new_tag = gamertag || Gamertag.find_by_name(gamertag_name) 
     unless new_tag
       new_tag = Gamertag.from_user(self, gamertag_name)
       new_tag.save!
